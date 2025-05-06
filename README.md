@@ -4,7 +4,7 @@ This is the frontend part of the project management app called Trello. This webs
 ## Sample View
 ![image](https://github.com/user-attachments/assets/ca4996bc-2e89-483b-a8da-2f9eccce46cc)
 
-##Features
+## Features
  * Create and manage lists by adding new items.
  * Drag and drop cards between different lists to track progress.
  * Rearrange lists by dragging to change the order.
