@@ -1,0 +1,77 @@
+@import '../../settings';
+
+
+.board-columns{
+    display: flex;
+    margin: 0 $gap $gap;
+    gap: 10px;
+    overflow-x: auto;
+   margin-top: 40px;
+
+    &::-webkit-scrollbar{
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:horizontal{
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 255, 255, 0.70);
+        border-radius: 2px;
+        background-clip: padding-box;
+    }   
+
+    .column-drop-preview {
+        background-color: rgba(105, 105, 189, 0.1);
+        border: 1px dashed #abc;
+        margin: 5px 45px 5px 5px;
+    }
+
+    .add-new-column{
+        width: 220px;
+        height: 40px;
+        line-height: 32px;
+        padding: 4px 0 4px 15px;
+        cursor: pointer;
+        color: white;
+        margin-left: $gap;
+        font-size: 15px;
+        background-color: hsla(171, 70%, 21%, 0.421);
+        box-shadow: 0px 0px 12px 6px #BDBDBD;
+        border-radius: $card-border-radius;
+        margin-top: 12px;
+        
+
+        &:hover {
+            color: #fff;
+            background-color: black
+            //border-color: #198754;
+        }
+    }
+
+    .content-add-column{
+        width: 250px;
+        padding: 5px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: hsla(171, 71%, 21%, 0.24);
+        border-radius: $card-border-radius;
+
+
+        .group-btn{
+            padding-top: 10px;
+            display: flex;
+            align-items: center;
+
+            i{
+                font-size: 31px;
+                padding-left: 8px;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+    
+

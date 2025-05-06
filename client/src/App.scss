@@ -1,0 +1,95 @@
+@import './settings';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&family=Roboto:wght@700&family=Ubuntu:wght@400;500&display=swap');
+@import './components/Column/Column.scss';
+@import './components/AppBar/AppBar.scss';
+
+
+body {
+    margin: 0;
+    line-height: 1.3em;
+    font-size: 14px;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(250, 55, 208, 0.8), rgba(250, 249, 250, 0,) 70.71%), 
+            linear-gradient(280deg, rgb(15, 218, 228), rgb(71, 82, 210) 70.71%),
+            ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+
+   
+   
+
+    &::-webkit-scrollbar{
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:horizontal{
+        height: 5px;
+        //background-color: #ebecf0;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: grey;
+        border-radius: 5px;
+        background-clip: padding-box;
+    }  
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40px 50px 1fr;
+    //color: black;
+    font-family: 'Roboto Slab', sans-serif;
+    
+    .icon{
+        font-size: 14px;
+        margin-right: 3px;
+        // color: white;
+    }
+    .customize-input-column{
+        border: none;
+        cursor: pointer;
+        background-color: #ebecf0;
+        
+
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        
+    }
+
+}
+
+
+@media (max-width: 768px){
+    body{
+        overflow-x: auto;
+        overflow-y: hidden;
+        
+    }
+    
+    .navbar-app, .navbar-board{
+        width: 100%;
+        position: fixed;
+        
+    }
+
+    .container{
+        display: grid;
+        grid-template-rows: 35px 40px;
+        
+    }
+    
+    .column{
+        width: 250px;
+
+        div.card-list{
+            overflow-y: auto;
+            max-height: 290px;
+        }
+    }
+    
+    
+}
